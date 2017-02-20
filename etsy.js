@@ -61,7 +61,7 @@ var woodItems = items.filter(function(woodCraft) {
 });
     // now that I have a small list of items that meet the condition, I need to get the title for each of the items.
 woodItems.forEach(function(woodItem) {
-    console.log(woodItem.title);
+    console.log(woodItem.title + ' is made of wood.');
 })
 
 // 5. Show me how to find which items are made of eight or more materials. Please console.log the ones you find.
@@ -72,7 +72,7 @@ var numberMaterials = items.filter(function(ingredients) {
 });
     // now that I have a list of items that meet that condition, I ned to get the title and list of items for each.
 numberMaterials.forEach(function(itemMaterial) {
-    console.log(itemMaterial.title, itemMaterial.materials.join('\n'))
+    console.log(itemMaterial.title + ' has ' + itemMaterial.materials.length + ' materials:'+('\n')+ itemMaterial.materials.join('\n'))
 })
 
 // 6. Show me how to calculate how many items were made by their sellers
